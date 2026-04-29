@@ -1,0 +1,33 @@
+### --- DADOS (O MAIS IMPORTANTE) ---
+# Ignora os CSVs gigantes originais para não estourar o limite do GitHub/Gitlab
+data/
+data_parquet/
+
+### --- IDE (IntelliJ / PyCharm) ---
+.idea/
+*.iml
+out/
+gen/
+
+### --- JUPYTER NOTEBOOKS ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+# Arquivos temporários de salvamento automático
+*.ipynb_checkpoints
+
+### --- PYTHON / VENV ---
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+
+### --- DOCKER ---
+logs/
+*.log
+
+### --- SISTEMA ---
+.DS_Store
+Thumbs.db

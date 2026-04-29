@@ -1,0 +1,15 @@
+services:
+  spark:
+    build: .
+    container_name: spark-container
+    ports:
+      - "8888:8888" # Jupyter Interface
+      - "4040:4040" # Spark UI (Jobs)
+      - "7077:7077" # Spark Master
+    volumes:
+      - .:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=projeto_bigdata
+      - PYSPARK_PYTHON=python3
+    restart: always
